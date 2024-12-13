@@ -1,0 +1,78 @@
+#equipes {
+  width: calc(100% - var(--page-margin));
+  min-height: 100vh;
+  margin-top: 5vh;
+  gap: 1rem;
+}
+
+.conjunto-equipes-slides {
+  width: 90%;
+}
+
+.card-vertical {
+  flex-direction: column;
+  max-width: 250px;
+  gap: 1rem;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.profile-picture {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .25rem;
+  }
+
+  .slide_three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .slide .card {
+    justify-content: start;
+    min-height: fit-content;
+
+    figure img {
+      width: 50px;
+    }
+
+    .card-content h5 {
+      font-size: calc(var(--base-font-size) * 1.25);
+      line-height: calc(var(--base-font-size) * 1.25 * 1.4);
+      text-align: center;
+    }
+
+    .card-content p {
+      font-size: calc(var(--base-font-size) * 1.25);
+      line-height: calc(var(--base-font-size) * 1.25 * 1.4);
+      text-align: center;
+    }
+  }
+
+  .card-vertical {
+    flex-direction: column;
+  }
+}

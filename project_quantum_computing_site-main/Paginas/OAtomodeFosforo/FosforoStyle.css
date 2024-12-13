@@ -1,0 +1,119 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0F2239;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Fim das estilizações gerais */
+/* Início das estilizações do título */
+.header {
+    height: 20vh;
+    display: flex; /* Torna a div um contêiner flexível */
+    justify-content: space-between; /* Distribui os itens igualmente na linha, com o máximo de espaço entre eles */
+    align-items: center;
+}
+
+.pTable{
+    width: 100px;
+}
+
+.pCirclie{
+    width: 100px;
+}
+/* Fim das estilizações do título */
+/* Início das estilizações sobre "o fósforo" */
+section{
+    min-height: 70vh;
+    width: 95vw;
+    background-color: #1c5cb0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.about{
+    height: 70vh;
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.aboutInfo{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.images{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.bar{
+    width: 20%;
+}
+
+.pElement{
+    height: 200px; /* Define a largura da imagem como 40% da largura da div pai */
+    margin-right: 20px;
+}
+
+/* Estilização das demais seções */
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.spinFirst{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.references{
+    display: flex;
+    flex-direction: column;
+    font-style: italic; 
+    font-weight: bold;
+}
+
+.references h3{
+    display: flex;
+    justify-content: center;  
+}

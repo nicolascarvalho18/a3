@@ -1,0 +1,49 @@
+#reportagens{
+    margin-top: 10vh;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-buttons{
+    display: flex;
+    justify-content: start;
+    gap: .3rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .filter-buttons button{
+    font-size: .7rem;
+} */
+
+.active {
+    background: #1C5CB0;
+    transition: background 400ms;
+}
+
+.active:hover {
+    background: #1F98D7;
+}
+
+.filterable-cards{
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.filterable-cards .card {
+    min-width: 250px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 25%; 
+}
+
+.filterable-cards .card.fcard-hide {
+    display: none;
+}
+
+

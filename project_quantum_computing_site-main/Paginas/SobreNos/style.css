@@ -1,0 +1,33 @@
+@import '../../Assets/CSS/home.css';
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+}
+
+figure img {
+  width: 90%;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10vh 1rem 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}

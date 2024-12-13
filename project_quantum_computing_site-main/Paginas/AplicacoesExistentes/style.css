@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  user-select: none;
+  overflow-x: hidden;
+}
+
+.wallpaper {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 37rem;
+  top: 0;
+}
+
+.hanken-grotesk {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.grande {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.medio {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.pequeno {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.scroll {
+  text-decoration: none;
+  color: #95c3f8;
+}
+.link {
+  text-decoration: none;
+  color: #ec454f;
+}
+
+body {
+  background-color: #0f2541;
+  color: #eeeeee;
+  margin: 0px;
+}
+
+header {
+  font-size: 3.5rem;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px;
+  font-weight: 900;
+  
+}
+
+nav {
+  background-color: #0a0f19;
+}
+
+main {
+  margin: auto;
+  max-width: 1000px;
+  min-width: 300;
+  margin-bottom: 20px;
+  padding: 20px;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+p,
+span {
+  letter-spacing: 1px;
+  text-indent: 10px;
+}
+
+footer {
+  display: block;
+  padding: 5px;
+  margin: 0px;
+  text-align: center;
+  background-color: #0a0f19;
+}
+
+ul {
+  list-style: none;
+  border-radius: 10px;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+li {
+  font-size: 14px;
+  margin-left: 2rem;
+  display: inline;
+  list-style-type: none;
+  color: #95c3f8;
+}
+
+li a:hover {
+  color: #eeeeee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#titulo {
+  font-size: 2.5rem;
+  line-height: 3.3rem;
+  text-align: left;
+}
+
+#home {
+  text-decoration: none;
+  color: #eeeeee;
+}
+#home strong {
+  font-weight: bold;
+}
+
+img {
+  display: flex;
+  margin: auto;
+  height: 350px;
+  width: 650px;
+}
+
+.navegacao {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wallpaper {
+  background-color: #11366a;
+  padding: 6rem;
+  border-radius: 5px;
+}
+
+.icon-quantico {
+  margin: 0;
+  display: flex;
+  height: 350px;
+  width: 400px;
+}
+
+.left-navegacao {
+  width: 40%;
+}
+
+.right-navegacao {
+  width: 40%;
+  margin-left: 5rem;
+}
+
+.right-navegacao img {
+  transform: scale(0.9);
+  height: 370px;
+  margin-left: 5rem;
+}
+
+#otimizacao {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-otimizacao {
+  width: 50%;
+}
+
+.left-otimizacao img {
+  width: 100%;
+  transform: scale(0.85);
+  opacity: 0.8;
+  border-radius: 3px;
+}
+
+.right-otimizacao {
+  width: 50%;
+}
+
+#financas-left {
+  width: 50%;
+}
+
+#pesquisa-right {
+  width: 50%;
+}
+
+.title-financas {
+  text-align: center;
+}
+
+#financas-left span {
+  text-align: center;
+}
+
+.section-financas-e-pesquisa {
+  gap: 5rem;
+  padding-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#simulacao {
+  margin-top: 8rem;
+  padding-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.wallpaper-simulacao {
+  position: absolute;
+  width: 100vw;
+  height: 35rem;
+  z-index: -1;
+  opacity: 0.5;
+  top: 125rem;
+}
+
+#ia {
+  margin-top: 8rem;
+  padding-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 8rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+#ia span {
+  text-align: center;
+}
+
+.link {
+  color: #95c3f8;
+}
+
+.link:hover {
+  color: #11366a;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  height: 15rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.footer span {
+    font-size: 12px;
+}

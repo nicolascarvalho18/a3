@@ -1,0 +1,407 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+/* Variáveis de tamanhos de fonte */
+:root {
+    /* Tamanho base da fonte */
+    --base-font-size: 16px;
+}
+
+/* Reset e configurações globais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Configurações do corpo da página */
+body {
+    background: #0A0F19;
+    /* Impede a rolagem horizontal */
+    overflow-x: hidden;
+}
+
+/* Navegação */
+nav,
+header {
+    /* Fixa a navegação no topo */
+    position: fixed;
+    padding: 10px;
+}
+
+nav ul,
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li,
+header ul li {
+    display: inline;
+}
+
+nav ul li a,
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover,
+header ul li a:hover,
+nav ul li a:active,
+header ul li a:active {
+    /* Realça o texto ao passar o mouse ou ao clicar */
+    font-weight: 600;
+}
+
+/* Seções */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 1vw;
+}
+
+/* Tipografia */
+.hanken-grotesk {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #EEEEEE;
+    font-weight: 400;
+}
+
+/* Peso da fonte */
+.light {
+    font-weight: 300;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra-bold {
+    font-weight: 800;
+}
+
+hr {
+    border-color: #0E1727;
+}
+
+h1 {
+    /* Tamanho do h1 */
+    font-size: calc(var(--base-font-size) * 4.688);
+    /* Line-height proporcional */
+    line-height: calc(var(--base-font-size) * 4.688 * 1.2);
+
+    /* Indica o peso da fonte, o quão mais espessa ela é */
+    font-weight: 800;
+}
+
+h2 {
+    /* Tamanho do h2 */
+    font-size: calc(var(--base-font-size) * 3.125);
+    /* Line-height proporcional */
+    line-height: calc(var(--base-font-size) * 3.125 * 1.2);
+
+    /* Peso da Fonte */
+    font-weight: 700;
+}
+
+h3 {
+    /* Tamanho do h3 */
+    font-size: calc(var(--base-font-size) * 2.5);
+    /* Line-height proporcional */
+    line-height: calc(var(--base-font-size) * 2.5 * 1.2);
+    font-weight: 700;
+}
+
+h4 {
+    /* Tamanho do h4 */
+    font-size: calc(var(--base-font-size) * 2);
+    /* Line-height proporcional */
+    line-height: calc(var(--base-font-size) * 2 * 1.2);
+    font-weight: 600;
+}
+
+h5,
+span {
+    /* Tamanho do h5 */
+    font-size: calc(var(--base-font-size) * 1.6);
+    /* Line-height proporcional */
+    line-height: calc(var(--base-font-size) * 1.6 * 1.2);
+
+    font-weight: 600;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.regular-text {
+    color: #EEEEEE;
+    font-size: var(--base-font-size);
+    line-height: calc(var(--base-font-size) * 1.4);
+}
+
+.small-text {
+    font-size: calc(var(--base-font-size) * 0.875);
+    line-height: calc(var(--base-font-size) * 0.875 * 1.4);
+}
+
+.medium-text {
+    font-size: calc(var(--base-font-size) * 1.125);
+    line-height: calc(var(--base-font-size) * 1.125 * 1.4);
+}
+
+.large-text {
+    font-size: calc(var(--base-font-size) * 1.25);
+    line-height: calc(var(--base-font-size) * 1.25 * 1.4);
+    color: #BAD9FC;
+}
+
+/* Botões */
+#botoes {
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7px;
+    outline-offset: -2px;
+}
+
+button:hover {
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Tamanhos e cores dos botões */
+.btn-tamanho1 {
+    max-width: 200px;
+    color: white;
+    height: 45px;
+}
+
+.btn-tamanho2 {
+    color: #ffffff;
+    min-width: 240px;
+    height: 50px;
+}
+
+.btn-tamanho3 {
+    gap: 10px;
+    color: #ffffff;
+    min-width: 250px;
+    height: 50px;
+}
+
+.btn-cor-primaria {
+    background: #0F2239;
+    transition: background 400ms;
+}
+
+.btn-cor-primaria:hover {
+    background: #132c49;
+}
+
+.btn-cor-secundaria {
+    background: #1C5CB0;
+    transition: background 400ms;
+}
+
+.btn-cor-secundaria:hover {
+    background: #1F98D7;
+}
+
+/* Conteúdo principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+/* Caixa de teste */
+.caixa-teste {
+    border-radius: 12px;
+    background: #0E1727;
+    padding: 1.5vw;
+    height: 50vh;
+    width: fit-content;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.caixa-teste div {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+/* Ícones */
+.small-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.medium-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-set {
+    filter: invert(100%) sepia(2%) saturate(6%) hue-rotate(348deg) brightness(103%) contrast(103%);
+}
+
+/* Efeitos de hover e ativo nos ícones */
+.btn-cor-primaria:hover .icon-set,
+.conjunto div img:hover,
+.icon-set:hover {
+    cursor: pointer;
+    filter: invert(55%) sepia(91%) saturate(2058%) hue-rotate(170deg) brightness(88%) contrast(91%);
+}
+
+.btn-cor-primaria:active .icon-set {
+    cursor: pointer;
+    filter: invert(29%) sepia(56%) saturate(2183%) hue-rotate(198deg) brightness(82%) contrast(89%);
+}
+
+/* Ícones da seção */
+#icones {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Conjunto de ícones */
+.conjunto {
+    width: 99vw;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+}
+
+.conjunto div img {
+    margin: 1vw;
+}
+
+#componentes {
+    gap: 1.5vw;
+}
+
+/* Texto do card */
+.texto-card {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    color: #879FB3;
+}
+
+/* Card */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2vw;
+    border-radius: 10px;
+    background: #0E1727;
+    outline-offset: -2px
+}
+
+.card-pequeno {
+    min-height: 250px;
+    max-width: 50vw;
+}
+
+/* Efeito de hover no card */
+.card:hover {
+    transition: .7s ease-in-out;
+    background: rgba(18, 29, 48, 0.897);
+    box-shadow: inset 0 0 0 2px #328AF1;
+    cursor: pointer;
+}
+
+/* Imagens */
+.small-img {
+    width: 100px;
+    height: 100px;
+}
+
+/* SVG */
+.svg {
+    width: 750px;
+    height: 750px;
+}
+
+
+.card-expansivel {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    min-height: fit-content;
+    height: fit-content;
+}
+
+.card-expansivel-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-expansivel-content {
+    display: none;
+    margin-top: 2rem;
+}
+
+.equipes .card-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.profile-picture {
+    max-width: 150px;
+    max-height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+}

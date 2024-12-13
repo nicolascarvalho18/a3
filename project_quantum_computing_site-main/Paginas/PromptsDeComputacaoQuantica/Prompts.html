@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Style.css">
+  <title>Diodo Zener</title>
+</head>
+
+<body>
+  <header>
+    <button class="btn-tamanho1 btn-cor-primaria btn-menu" id="handleShowModal">
+ 
+        <path class="line line1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
+
+ 
+    <ul class="hanken-grotesk regular-text navbar__links mobile__hidden">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="">Notícias</a>
+      </li>
+      <li>
+        <a href="./Paginas/SobreNos/index.html">Sobre nós</a>
+      </li>
+    </ul>
+    <nav class="poppins menu__links hidden">
+      <ul>
+        <li class="navigation__home mobile__show">
+          <a href="./../../index.html">Home</a>
+          <a href="">Notícias</a>
+          <a href="/Paginas/SobreNos/about.html">Sobre nós</a>
+
+      </ul>
+    </nav>
+  </header>
+
+  <center>
+    <h1 class="hanken-grotesk">Diodo Zener</h1>
+  </center>
+
+
+
+  <h2 class="hanken-grotesk" id="zener-content1">Como Funciona o Diodo Zener</h2>
+  <p class="paragraph">O **diodo Zener** é um tipo especial de diodo que permite o fluxo de corrente em ambas as direções, mas com uma característica particular: quando a tensão reversa atinge um valor específico, chamado de "tensão de Zener", o diodo conduz corrente de forma controlada e permite a estabilização da tensão. Isso o torna essencial para aplicações como a **regulação de tensão** em fontes de alimentação e circuitos de proteção.</p>
+  
+  <h3 id="zener-content2">Características e Aplicações</h3>
+  <!-- Botão 1 -->
+  <button class="custom-button" onclick="exibirOcultar('texto1')">Regulação de Tensão</button>
+  <div id="texto1" class="poppinsalt">
+    <p>O diodo Zener é amplamente utilizado em fontes de alimentação para **manter uma tensão constante** mesmo com variações na carga ou na tensão de entrada.</p>
+  </div>
+
+  <!-- Botão 2 -->
+  <button class="custom-button" onclick="exibirOcultar('texto2')">Proteção contra Sobretensão</button>
+  <div id="texto2" class="poppinsalt">
+    <p>Ele é usado para proteger circuitos sensíveis contra **sobretensões**. Quando a tensão ultrapassa o limite de Zener, o diodo conduz e protege os componentes eletrônicos.</p>
+  </div>
+
+  <!-- Botão 3 -->
+  <button class="custom-button" onclick="exibirOcultar('texto3')">Desempenho em Baixas Tensões</button>
+  <div id="texto3" class="poppinsalt">
+    <p>O diodo Zener é eficaz **em circuitos de baixa tensão**, mantendo a tensão constante e fornecendo uma **referência estável** para outros componentes do circuito.</p>
+  </div>
+
+  <!-- Botão 4 -->
+  <button class="custom-button" onclick="exibirOcultar('texto4')">Aplicações em Circuitos Digitais</button>
+  <div id="texto4" class="poppinsalt">
+    <p>Em circuitos digitais, o diodo Zener pode ser usado para garantir que os níveis de tensão de operação estejam dentro dos limites ideais, evitando falhas nos circuitos.</p>
+  </div>
+
+  <div class="container" id="zener-content2">
+    <h2><center>O Impacto do Diodo Zener na Eletrônica</center></h2>
+    <p class="poppins">O diodo Zener, devido às suas características únicas, desempenha um papel vital em vários sistemas eletrônicos, como **fontes de alimentação**, **circuitos de proteção** e até mesmo em **comunicações ópticas**, garantindo que a energia e a tensão sejam controladas com precisão.</p>
+
+    <h4>Como o Diodo Zener Pode Melhorar a Performance</h4>
+    <p>O uso do diodo Zener melhora a performance dos sistemas eletrônicos ao **proteger contra picos de tensão** e ao **manter a estabilidade** em fontes de alimentação. Sua capacidade de conduzir corrente em direção reversa em uma tensão específica oferece uma solução prática para sistemas que exigem uma tensão constante.</p>
+
+    <h4>A Importância na Regulagem de Tensão</h4>
+    <p>Com a regulação de tensão, o diodo Zener evita **danos a componentes eletrônicos** que podem ocorrer devido a flutuações de tensão, como transistores e circuitos integrados. Ele atua como um **regulador de voltagem** em sistemas de baixa e alta frequência.</p>
+
+    <h4>Conclusão: O Papel Essencial do Diodo Zener</h4>
+    <p>Em resumo, o diodo Zener é um componente essencial na eletrônica moderna, utilizado para **regulação de tensão** e **proteção de circuitos**. Sua capacidade de controlar a tensão de forma eficiente o torna uma ferramenta indispensável em diversas áreas, desde fontes de alimentação até sistemas de comunicação.</p>
+  </div>
+
+  <script src="../../Assets/Scripts/home.js"></script>
+
+  <script>
+    function exibirOcultar(id) {
+      var texto = document.getElementById(id);
+      // Se o texto está visível, oculta; caso contrário, exibe
+      texto.style.display = (texto.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+
+</html>
